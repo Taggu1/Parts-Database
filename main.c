@@ -33,9 +33,9 @@ void start_app() {
 
         switch (tolower(operation)) {
             case 'i': insert_part(); break; // TODO: function call
-            case 's': break;
-            case 'u': break;
-            case 'p': break;
+            case 's': search_by_num(); break;
+            case 'u': edit_by_num(); break;
+            case 'p': print_parts();  break;
             case 'q': return;
             default: puts("Invalid operation, please try again"); continue; break;
         }
